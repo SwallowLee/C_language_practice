@@ -1,0 +1,24 @@
+TITLE This is practice for quiz
+
+include Irvine32.inc
+include Macros.inc
+
+.data
+	menu BYTE	"My student ID is: 0416039", 0Dh, 0Ah,
+				"Please select one of the option", 0Dh, 0Ah,
+				"1.Compute (2-4+6-...+(-1)^(n+1) 2n)/m", 0Dh, 0Ah,
+				"2. Compute (2-4+6-...+(-1)^(n+1) 2n)*m", 0Dh, 0Ah,
+				"3. Compute S(n)", 0Dh, 0Ah,
+				"4. Quit the program", 0Dh, 0Ah,
+				"Please select an option......", 0Dh, 0Ah, 0
+.code
+
+main PROC
+	call showMenu
+main ENDP
+
+showMenu PROC
+	ret
+showMenu ENDP
+
+END main
