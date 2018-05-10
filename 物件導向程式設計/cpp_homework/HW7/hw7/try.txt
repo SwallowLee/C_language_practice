@@ -1,0 +1,4 @@
+cat test.txt 
+cat test.txt > result1_1.txt  
+exit
+
